@@ -1,0 +1,38 @@
+
+                            
+/* TEAM */
+
+                            
+Your title: Alejandro Leyva
+
+                            
+Site: http://alejandro-leyva.com
+
+                            
+Twitter: @jalm_x
+
+                            
+Location: Coatzacoalcos, Veracruz, Mexico.
+
+
+						
+
+							
+/* THANKS */
+
+							
+Name: Xizuth Inc
+Site: http://xizuth.com
+						
+                 
+                        [...]
+                        
+
+                            
+/* SITE */
+
+                            
+Last update: 2018/09/13 
+
+                            
+Standards: HTML5, CSS3, JS, SASS
