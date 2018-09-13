@@ -1561,10 +1561,14 @@ a > img.fh5co-align-center {
 
 /*# sourceMappingURL=style.css.map */
 
-.my_header{
+.my_header-android{
   background-color: #3F51B5 !important;
+}
+
+.my_header-java{
+  background-color: #03A9F4 !important;
 }
 .img-icon{
   padding: 3em;
-  
+
 }
