@@ -1,0 +1,51 @@
+.header-main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    flex-grow: 1;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-grow: 1;
+    }
+    &__top {
+        width: 100%;
+        text-align: right;
+        justify-content: right;
+    }
+    &__photo-container {
+        box-sizing: content-box;
+        padding: .5rem;
+        background: var(--color-accent);
+        border-radius: 100%;
+    }
+    &__img {
+        width: 200px;
+        border-radius: 100%;
+    }
+    &__title,
+    &__subtitle {
+        text-align: center;
+        padding-top: 2rem;
+        font-weight: normal;
+    }
+    &__title {
+        font-size: var(--font--title);
+    }
+    &__subtitle {
+        font-size: var(--font--subtitle);
+        padding-bottom: 2rem;
+    }
+}
+
+@import 'menu'

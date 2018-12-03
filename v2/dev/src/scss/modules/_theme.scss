@@ -1,0 +1,22 @@
+@font-face {
+    src: url('assets/Raleway/Raleway-Regular.ttf') format("ttf");
+    font-family: Raleway;
+}
+
+:root {
+    --font-size: 16px;
+    font-size: var(--font-size);
+    --color-accent: #29ABE2;
+    --color-black: #333;
+    --color-divider: #B9B9B9;
+    --font--title: 3rem;
+    --font-size-subtitle: 1.2rem;
+    --font-size-menu: 1.2rem;
+    --font-size-title-section: 2rem;
+    --font-size-title-card: 1.5rem;
+    --font-size-description: .9rem;
+    --font-size-btn: .9rem;
+    --line-height: 2;
+    color: var(--color-black);
+    font-family: Raleway, sans-serif;
+}

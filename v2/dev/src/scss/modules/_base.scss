@@ -1,6 +1,31 @@
 *,
 :root,
 ::after,
-::before{
-    
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    max-width: 1200px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
 }

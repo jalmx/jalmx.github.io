@@ -1,0 +1,38 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 320px;
+    box-shadow: 1px 1px 10px #333;
+    &__header {
+        padding: 1rem;
+        height: 199px;
+    }
+    &__img {
+        height: 123px;
+    }
+    .blog &__title {
+        padding: 1rem 1rem 0 1rem;
+    }
+    &__title {
+        font-size: var(--font-size-title-card);
+        font-weight: normal;
+        padding-top: 1rem;
+    }
+    &__description {
+        padding: 1rem;
+        font-size: var(--font-size-description);
+    }
+    &__footer {
+        border-top: 1px solid var(--color-divider);
+        padding: .5rem 1rem;
+    }
+    &__header-img {
+        padding: 0;
+    }
+    &__header-img .card__img {
+        height: auto;
+    }
+}

@@ -1,0 +1,16 @@
+.information {
+    &__container {
+        width: 100%;
+        display: flex;
+    }
+    &__img,
+    &__description {
+        width: 50%;
+    }
+    &__img {
+        padding-right: .5rem;
+    }
+    &__description {
+        padding-left: .5rem;
+    }
+}
