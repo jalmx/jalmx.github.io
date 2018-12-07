@@ -35,4 +35,19 @@
     &__header-img .card__img {
         height: auto;
     }
+    & [class^="icon-"]:before,
+    & [class*=" icon-"]:before {
+        color: var(--color-accent);
+        font-size: 7.7rem;
+        display: block;
+    }
+    .link-img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transition: all .4s;
+        & i {
+            display: block;
+        }
+    }
 }

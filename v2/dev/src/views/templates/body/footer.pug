@@ -7,23 +7,28 @@ footer.footer
         li.sitemap__item: a(href="").sitemap__link Capacitación
         li.sitemap__item: a(href="").sitemap__link Sobre mí
         li.sitemap__item: a(href="").sitemap__link Contacto
-      p
-        a(href="mailto:hola@alejandro-leyva.com") hola@alejandro-leyva.com
+      p.site__contact
+        a(href="mailto:hola@alejandro-leyva.com").site__email hola@alejandro-leyva.com
     .logo
       img(src="assets/imgs/logo_A.png", alt="").logo__img
     .social-media
       h3.social-media__title Redes sociales
       ul.social-media__list
-        li.social-media__item: img(src="assets/imgs/play.svg", alt="google play").social-media__img
-        li.social-media__item: img(src="assets/imgs/fb.svg", alt="facebook").social-media__img
-        li.social-media__item: img(src="assets/imgs/tw.svg", alt="Tweeter").social-media__img
-        li.social-media__item: img(src="assets/imgs/yt.svg", alt="YouTube").social-media__img
-        li.social-media__item: img(src="assets/imgs/dribble.svg", alt="Dribble").social-media__img
-        li.social-media__item: img(src="assets/imgs/lk.svg", alt="LinkeIn").social-media__img
-  .footer__information.information
+        li.social-media__item: a(href="#").icon-yt
+        li.social-media__item: a(href="#").icon-play
+        li.social-media__item: a(href="#").icon-fb
+        li.social-media__item: a(href="#").icon-tw
+        li.social-media__item: a(href="#").icon-dribble
+        li.social-media__item: a(href="#").icon-lk
+
+  .footer__information
     ul.information__list
       li.information__item: a(href="#").information__link Sitemap
       li.information__item: a(href="#").information__link Terminos y Condiciones
       li.information__item: a(href="#").information__link Política de privacidad
-  .footer__mark
-    p#mark &copy Alejandro Leyva 
+  footer.footer__mark
+    p
+      a(href="#")#mark &copy Alejandro Leyva 
+    script(type="text/javascript").
+      const date = document.getElementById('mark');
+      date.innerHTML += new Date().getFullYear()
