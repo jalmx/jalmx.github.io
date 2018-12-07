@@ -43,21 +43,24 @@
         <h2 class="section__title" id="design">Diseño & Desarrollo</h2>
         <div class="card-container">
           <div class="card">
-            <header class="card__header"><img class="card__img" src="assets/imgs/android.svg" alt="android"/>
+            <header class="card__header">
+              <div class="card__img"><a class="link-img" href="#"><i class="icon-android img-design"></i></a></div>
               <h2 class="card__title">Movíl</h2>
             </header>
             <div class="card__description">Desarrollador de aplicaciones móviles en Android</div>
             <footer class="card__footer"><a class="btn-card btn" href="#">ver más</a></footer>
           </div>
           <div class="card">
-            <header class="card__header"><img class="card__img" src="assets/imgs/js.svg" alt="javascript"/>
+            <header class="card__header">
+              <div class="card__img"><a class="link-img" href="#"><i class="icon-js img-design"></i></a></div>
               <h2 class="card__title">Web, SPA & PWA</h2>
             </header>
             <div class="card__description">Desarrollador sitios estáticos y dinámicos, aplicaciones Webs</div>
             <footer class="card__footer"><a class="btn-card btn" href="#">ver más</a></footer>
           </div>
           <div class="card">
-            <header class="card__header"><img class="card__img" src="assets/imgs/arduino.svg" alt="arduino"/>
+            <header class="card__header">
+              <div class="card__img"><a class="link-img" href="#"><i class="icon-arduino img-design"></i></a></div>
               <h2 class="card__title">Eléctronica</h2>
             </header>
             <div class="card__description">Diseño eléctronico, microcontroladores, Arduino</div>
@@ -124,13 +127,14 @@
               <input class="form__input" type="text" placeholder="Nombre" name="name"/>
               <input class="form__input" type="email" placeholder="Correo" name="email"/>
             </div>
-            <div class="form__message">
-              <textarea name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <div class="form__messages">
+              <textarea class="form__message" name="message" cols="20" rows="4" placeholder="Mensaje"></textarea>
             </div>
-            <footer class="form__footer"><a class="btn form__btn" href="#">envíar </a></footer>
           </div>
         </form>
-        <div class="btn-container"><a class="btn btn-block" href="#">Leer más</a></div>
+        <footer class="form__footer">
+          <div class="btn-container"><a class="btn btn-block" href="#">envíar </a></div>
+        </footer>
       </section>
     </main>
     <footer class="footer">
@@ -143,31 +147,35 @@
             <li class="sitemap__item"><a class="sitemap__link" href="">Sobre mí</a></li>
             <li class="sitemap__item"><a class="sitemap__link" href="">Contacto</a></li>
           </ul>
-          <p><a href="mailto:hola@alejandro-leyva.com">hola@alejandro-leyva.com</a></p>
+          <p class="site__contact"><a class="site__email" href="mailto:hola@alejandro-leyva.com">hola@alejandro-leyva.com</a></p>
         </div>
         <div class="logo"><img class="logo__img" src="assets/imgs/logo_A.png" alt=""/></div>
         <div class="social-media">
           <h3 class="social-media__title">Redes sociales</h3>
           <ul class="social-media__list">
-            <li class="social-media__item"><img class="social-media__img" src="assets/imgs/play.svg" alt="google play"/></li>
-            <li class="social-media__item"><img class="social-media__img" src="assets/imgs/fb.svg" alt="facebook"/></li>
-            <li class="social-media__item"><img class="social-media__img" src="assets/imgs/tw.svg" alt="Tweeter"/></li>
-            <li class="social-media__item"><img class="social-media__img" src="assets/imgs/yt.svg" alt="YouTube"/></li>
-            <li class="social-media__item"><img class="social-media__img" src="assets/imgs/dribble.svg" alt="Dribble"/></li>
-            <li class="social-media__item"><img class="social-media__img" src="assets/imgs/lk.svg" alt="LinkeIn"/></li>
+            <li class="social-media__item"><a class="icon-yt" href="#"></a></li>
+            <li class="social-media__item"><a class="icon-play" href="#"></a></li>
+            <li class="social-media__item"><a class="icon-fb" href="#"></a></li>
+            <li class="social-media__item"><a class="icon-tw" href="#"></a></li>
+            <li class="social-media__item"><a class="icon-dribble" href="#"></a></li>
+            <li class="social-media__item"><a class="icon-lk" href="#"></a></li>
           </ul>
         </div>
       </header>
-      <div class="footer__information information">
+      <div class="footer__information">
         <ul class="information__list">
           <li class="information__item"><a class="information__link" href="#">Sitemap</a></li>
           <li class="information__item"><a class="information__link" href="#">Terminos y Condiciones</a></li>
           <li class="information__item"><a class="information__link" href="#">Política de privacidad</a></li>
         </ul>
       </div>
-      <div class="footer__mark">
-        <p id="mark">&copy Alejandro Leyva </p>
-      </div>
+      <footer class="footer__mark">
+        <p><a href="#" id="mark">&copy Alejandro Leyva </a></p>
+        <script type="text/javascript">
+          const date = document.getElementById('mark');
+          date.innerHTML += new Date().getFullYear()
+        </script>
+      </footer>
     </footer>
   </body>
 </html>
