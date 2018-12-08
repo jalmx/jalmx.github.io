@@ -9,6 +9,7 @@
 
 html {
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -29,3 +30,7 @@ img {
     display: block;
     width: 100%;
 }
+
+$break-medium: 999px;
+$break-small: 479px;
+$break-contact: 615px;

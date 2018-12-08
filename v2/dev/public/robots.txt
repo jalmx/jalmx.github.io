@@ -1,0 +1,4 @@
+User-agent: *
+Allow: folder1/
+Allow: folder2/
+Disallow: cgi-bin/

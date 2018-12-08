@@ -7,28 +7,27 @@ footer.footer
         li.sitemap__item: a(href="").sitemap__link Capacitación
         li.sitemap__item: a(href="").sitemap__link Sobre mí
         li.sitemap__item: a(href="").sitemap__link Contacto
-      p.site__contact
+      p.sitemap__contact
         a(href="mailto:hola@alejandro-leyva.com").site__email hola@alejandro-leyva.com
     .logo
-      img(src="assets/imgs/logo_A.png", alt="").logo__img
+      img(src="assets/imgs/logo_A.png", alt="logo alejandro leyva").logo__img
     .social-media
       h3.social-media__title Redes sociales
       ul.social-media__list
-        li.social-media__item: a(href="#").icon-yt
-        li.social-media__item: a(href="#").icon-play
-        li.social-media__item: a(href="#").icon-fb
-        li.social-media__item: a(href="#").icon-tw
-        li.social-media__item: a(href="#").icon-dribble
-        li.social-media__item: a(href="#").icon-lk
-
+        li.social-media__item: a(href="https://www.youtube.com/channel/UC2rlTxv1KvCDUdI7okbudhw", target="_blank").icon-yt
+        li.social-media__item: a(href="https://play.google.com/store/apps/dev?id=7182139636058696036&hl=en", target="_blank").icon-play
+        li.social-media__item: a(href="https://www.facebook.com/leyva.consult/", target="_blank").icon-fb
+        li.social-media__item: a(href="https://twitter.com/jalm_x", target="_blank").icon-tw
+        li.social-media__item: a(href="https://www.linkedin.com/in/alejandro-leyva-consult/", target="_blank").icon-lk
   .footer__information
     ul.information__list
-      li.information__item: a(href="#").information__link Sitemap
-      li.information__item: a(href="#").information__link Terminos y Condiciones
-      li.information__item: a(href="#").information__link Política de privacidad
+      li.information__item: a(href="sitemap.xml", target="_blank").information__link Sitemap
+      li.information__item: a(href="terms_and_conditions.html", target="_blank").information__link Terminos y Condiciones
+      li.information__item: a(href="privacy_policy.html", target="_blank").information__link Política de privacidad
   footer.footer__mark
     p
-      a(href="#")#mark &copy Alejandro Leyva 
+      a(href="/")#mark &copy Alejandro Leyva 2018 - 
     script(type="text/javascript").
       const date = document.getElementById('mark');
       date.innerHTML += new Date().getFullYear()
+

@@ -13,6 +13,9 @@
     &__header {
         display: flex;
         padding-bottom: 1rem;
+        @media screen and (max-width: $break-contact) {
+            flex-direction: column;
+        }
     }
     .sitemap {
         display: flex;
@@ -23,9 +26,17 @@
         &__item {
             padding-bottom: 1rem;
         }
+        @media screen and (max-width: $break-contact) {
+            &__contact {
+                text-align: right;
+            }
+        }
     }
     .logo {
         flex: 0 5 10%;
+        @media screen and (max-width: $break-contact) {
+            display: none;
+        }
     }
     .social-media {
         flex: 1 1 45%;
@@ -38,6 +49,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+        @media screen and (max-width: $break-contact) {
+            padding: 0;
         }
     }
     .information__list {

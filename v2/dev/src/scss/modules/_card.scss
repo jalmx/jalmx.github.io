@@ -1,6 +1,12 @@
 .card-container {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: $break-medium) and (min-width:$break-small) {
+        flex-direction: column;
+    }
+    @media screen and (max-width:$break-small) {
+        display: block;
+    }
 }
 
 .card {
@@ -35,19 +41,34 @@
     &__header-img .card__img {
         height: auto;
     }
-    & [class^="icon-"]:before,
-    & [class*=" icon-"]:before {
-        color: var(--color-accent);
-        font-size: 7.7rem;
-        display: block;
+    @media screen and (max-width: $break-medium) and (min-width:$break-small) {
+        width: 100%;
+        margin-bottom: 2rem;
+        &__header {
+            height: auto;
+            display: flex;
+            align-items: flex-end;
+        }
+        &__title {
+            padding-left: 1rem;
+        }
+        &__footer {
+            text-align: right;
+        }
     }
-    .link-img {
+    @media screen and (max-width:$break-small) {
+        margin: auto;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+.img {
+    &-link {
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-        transition: all .4s;
-        & i {
-            display: block;
-        }
+    }
+    &-design {
+        width: auto;
     }
 }

@@ -17,8 +17,12 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-browserify": "^0.5.1",
+    "gulp-cache-bust": "^1.4.0",
+    "gulp-humans": "^2.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-robots": "^2.0.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-sitemap": "^6.1.0"
   }
 }

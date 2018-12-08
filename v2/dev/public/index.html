@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mx">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content="Alejandro Leyva desarrollador, diseñador de Software y Handware, Capacitador y Docente"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png"/>
-    <link rel="manifest" href="assets/icon/site.webmanifest"/>
+    <meta name="author" content="Alejandro Leyva"/>
+    <link rel="sitemap" href="sitemap.xml"/>
+    <meta name="robots" content="index, follow"/>
     <link rel="mask-icon" href="assets/icon/safari-pinned-tab.svg" color="#29abe2"/>
     <meta name="msapplication-TileColor" content="#29abe2"/>
     <meta name="theme-color" content="#29abe2"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/icon/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/icon/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icon/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/icon/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icon/apple-icon-152x152.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon/android-icon-192x192.png"/>
+    <meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png"/>
+    <link rel="manifest" href="assets/icon/site.webmanifest"/>
+    <link rel="manifest" href="assets/icon/manifest.json"/>
+    <meta property="og:title" content="Alejandro Leyva Consultor"/>
+    <meta property="og:image" content="https://raw.githubusercontent.com/jalmx89/ohm-law-X/master/img_src/lg_A.png"/>
+    <meta property="og:url" content="https://www.facebook.com/leyva.consult"/>
+    <meta property="og:site_name" content="Alejandro Leyva Consultor"/>
+    <meta property="og:description" content="Consultoria para startups, Negocios y Tecnología"/>
     <link rel="stylesheet" href="css/style.css"/>
     <title>Alejandro Leyva | Perfil - Develop & Design</title>
   </head>
@@ -19,23 +38,23 @@
     <main>
       <div class="header-main">
         <header class="header">
-          <div class="header__top"><a class="btn-header btn" href="#contact">Di Hola</a></div>
+          <div class="header__top"><a class="btn btn-header icon-menu" href="" id="btn_menu"></a><a class="btn-header btn" href="#contact">Di Hola</a></div>
           <div class="header__container">
-            <div class="header__photo-container"><img class="header__img" src="assets/imgs/perfil.jpg" alt="Alejandro Leyva"/></div>
+            <div class="header__photo-container"><a href="/"><img class="header__img" src="assets/imgs/perfil.jpg" alt="Alejandro Leyva"/></a></div>
             <div class="header__copy">
-              <h1 class="header__title">Alejandro Leyva </h1>
-              <h2 class="header__subtitle">Diseñador & Desarrollador en Hardware & Software</h2>
+              <h1 class="header__title"><a class="link-home" href="/">Alejandro Leyva </a></h1>
+              <h2 class="header__subtitle">Diseñador & Desarrollador<br>Hardware & Software <br><br>Facilitador & Docente</h2>
             </div>
           </div>
         </header>
-        <nav class="menu">
+        <nav class="menu" id="menu">
           <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="#design">Diseño & Desarrollo</a></li>
             <li class="menu__item"><a class="menu__link" href="#blog">Blog</a></li>
             <li class="menu__item"><a class="menu__link" href="#teaching">Capacitación</a></li>
             <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
             <li class="menu__item"><a class="menu__link" href="#contact">Contacto</a></li>
-            <li class="menu__item"><a class="menu__link" href="https://xizuth.com">Xizuth</a></li>
+            <li class="menu__item"><a class="menu__link" href="https://xizuth.com" target="_blank">Xizuth</a></li>
           </ul>
         </nav>
       </div>
@@ -44,96 +63,96 @@
         <div class="card-container">
           <div class="card">
             <header class="card__header">
-              <div class="card__img"><a class="link-img" href="#"><i class="icon-android img-design"></i></a></div>
+              <div class="card__img"><a class="img-link" href="https://play.google.com/store/apps/dev?id=7182139636058696036&amp;hl=en" target="_blank"><img class="img-design" src="/assets/imgs/android.svg" alt="logo android"/></a></div>
               <h2 class="card__title">Movíl</h2>
             </header>
             <div class="card__description">Desarrollador de aplicaciones móviles en Android</div>
-            <footer class="card__footer"><a class="btn-card btn" href="#">ver más</a></footer>
+            <footer class="card__footer"><a class="btn-card btn" href="https://play.google.com/store/apps/dev?id=7182139636058696036&amp;hl=en" target="_blank">ver más</a></footer>
           </div>
           <div class="card">
             <header class="card__header">
-              <div class="card__img"><a class="link-img" href="#"><i class="icon-js img-design"></i></a></div>
+              <div class="card__img"><a class="img-link" href="https://xizuth.com/" target="_blank"><img class="img-design" src="/assets/imgs/js.svg" alt="logo javascript"/></a></div>
               <h2 class="card__title">Web, SPA & PWA</h2>
             </header>
             <div class="card__description">Desarrollador sitios estáticos y dinámicos, aplicaciones Webs</div>
-            <footer class="card__footer"><a class="btn-card btn" href="#">ver más</a></footer>
+            <footer class="card__footer"><a class="btn-card btn" href="https://xizuth.com/" target="_blank">ver más</a></footer>
           </div>
           <div class="card">
             <header class="card__header">
-              <div class="card__img"><a class="link-img" href="#"><i class="icon-arduino img-design"></i></a></div>
+              <div class="card__img"><a class="img-link" href="https://xizuth.com/" target="_blank"><img class="img-design" src="/assets/imgs/arduino.svg" alt="logo arduino"/></a></div>
               <h2 class="card__title">Eléctronica</h2>
             </header>
             <div class="card__description">Diseño eléctronico, microcontroladores, Arduino</div>
-            <footer class="card__footer"><a class="btn-card btn btn" href="#">ver más</a></footer>
+            <footer class="card__footer"><a class="btn-card btn btn" href="https://xizuth.com/" target="_blank">ver más</a></footer>
           </div>
         </div>
-        <div class="btn-container"><a class="btn btn-block" href="#">Ver más</a></div>
+        <div class="btn-container"><a class="btn btn-block" href="https://xizuth.com/" target="_blank">Ver más</a></div>
       </section>
       <section class="section blog">
         <h2 class="section__title" id="blog">Blog</h2>
         <div class="card-container">
           <div class="card">
-            <header class="card__header-img"><img class="card__img" src="assets/imgs/blog.png" alt="blog"/></header>
+            <header class="card__header-img"><img class="card__img" src="https://cdn-images-1.medium.com/max/800/1*vA1izTahD1j5R7nlg3zzDA.jpeg" alt="blog"/></header>
             <div class="card__body">
               <h2 class="card__title">¿Cómo comenzar a aprender algo nuevo?</h2>
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempora sequi accusantium, reprehenderit corrupti voluptate!</p>
+              <p class="card__description">Siempre que te llama la atención algún tema desconocido, sin importar el rubro, puedes pensar que, ...</p>
             </div>
-            <footer class="card__footer"><a class="btn-card btn" href="#">leer más</a></footer>
+            <footer class="card__footer"><a class="btn-card btn" href="https://medium.com/@xizuth/c%C3%B3mo-comenzar-a-aprender-algo-nuevo-acd591fb1a38" target="_blank">leer más</a></footer>
           </div>
           <div class="card">
-            <header class="card__header-img"><img class="card__img" src="assets/imgs/blog.png" alt="blog"/></header>
+            <header class="card__header-img"><img class="card__img" src="https://cdn-images-1.medium.com/max/2000/1*iSmiBgCKNJWpVY6ZETnceg.jpeg" alt="blog"/></header>
             <div class="card__body">
-              <h2 class="card__title">¿Cómo comenzar a aprender algo nuevo?</h2>
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempora sequi accusantium, reprehenderit corrupti voluptate!</p>
+              <h2 class="card__title">¿Debería comenzar a programar en Android?</h2>
+              <p class="card__description">Hoy en día en el mundo existen más de 2 millones de dispositivos con el SO Android, y eso significa que existen ...</p>
             </div>
-            <footer class="card__footer"><a class="btn-card btn" href="#">leer más</a></footer>
+            <footer class="card__footer"><a class="btn-card btn" href="#" target="_blank">leer más </a></footer>
           </div>
           <div class="card">
-            <header class="card__header-img"><img class="card__img" src="assets/imgs/blog.png" alt="blog"/></header>
+            <header class="card__header-img"><img class="card__img" src="https://cdn-images-1.medium.com/max/2000/1*wEbzDNjkOMQ2uv-iNeUxPQ.jpeg" alt="blog"/></header>
             <div class="card__body">
-              <h2 class="card__title">¿Cómo comenzar a aprender algo nuevo?</h2>
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempora sequi accusantium, reprehenderit corrupti voluptate!</p>
+              <h2 class="card__title">Ley de Ohms (Ohms law X)</h2>
+              <p class="card__description">En ocasiones cuando estamos desarrollando algún proyecto electrónico, ya sea usando Arduino, Raspberry pi, ...</p>
             </div>
-            <footer class="card__footer"><a class="btn-card btn" href="#">leer más</a></footer>
+            <footer class="card__footer"><a class="btn-card btn" href="#" target="_blank">leer más</a></footer>
           </div>
         </div>
-        <div class="btn-container"><a class="btn btn-block" href="#">Leer más</a></div>
+        <div class="btn-container"><a class="btn btn-block" href="https://medium.com/@xizuth" target="_blank">Leer más</a></div>
       </section>
       <section class="section learning">
         <h2 class="section__title" id="teaching">Capacitación</h2>
         <div class="learnig__container information__container">
           <div class="learning__img information__img"><img src="assets/imgs/teaching.png" alt="Alejandro Leyva Clase enseñando"/></div>
           <div class="learning__description information__description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit dolorum quia necessitatibus dolorem dolore corrupti! Neque debitis explicabo molestias architecto ab qui possimus nam, eum sint laborum facere rem!</p>
+            <p>Amplia experiencia en docencia, en diversos niveles educativos; tanto público como privado. Impartiendo asignaturas de especialidad de carreras como ingeniería de software, sistemas computacionales, estadística administrativa y mecatrónica. Tanto de manera presencial como en línea.</p>
           </div>
         </div>
-        <div class="btn-container"><a class="btn btn-block" href="#">Ver más</a></div>
+        <div class="btn-container"><a class="btn btn-block" href="capacitacion.html">Ver más</a></div>
       </section>
       <section class="section about information">
         <h2 class="section__title" id="about">Sobre mí</h2>
         <div class="information__container">
-          <div class="about__img information__img"><img src="assets/imgs/teaching.png" alt="Alejandro Leyva dando capacitación en JAVA"/></div>
+          <div class="about__img information__img"><img src="assets/imgs/me.jpg" alt="Alejandro Leyva recibiendo diploma de capacitador"/></div>
           <div class="about__description information__description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit dolorum quia necessitatibus dolorem dolore corrupti! Neque debitis explicabo molestias architecto ab qui possimus nam, eum sint laborum facere rem!</p>
+            <p>Soy ingeniero en electrónica, entusiasta del desarrollo y diseño electrónico; desarrollo de software, especializado en creación de <strong>aplicaciones nativas en Android</strong>. Emprendedor en el ámbito tecnológico, conferencista, docente y capacitador en el rubro digital.</p>
           </div>
         </div>
-        <div class="btn-container"><a class="btn btn-block" href="#">Leer más</a></div>
+        <div class="btn-container"><a class="btn btn-block" href="about.html">Leer más</a></div>
       </section>
       <section class="section contact">
         <h2 class="section__title" id="contact">Contacto</h2>
         <form class="contact__form form">
           <div class="form__data">
             <div class="form__inputs">
-              <input class="form__input" type="text" placeholder="Nombre" name="name"/>
-              <input class="form__input" type="email" placeholder="Correo" name="email"/>
+              <input class="form__input" type="text" placeholder="Nombre" name="name" required="required" id="name"/>
+              <input class="form__input" type="email" placeholder="Correo" name="email" pattern="/^[-w.%+]{1,64}@(?:[A-Z0-9-]{1,63}.){1,125}[A-Z]{2,63}$/i" required="required" id="mail"/>
             </div>
             <div class="form__messages">
-              <textarea class="form__message" name="message" cols="20" rows="4" placeholder="Mensaje"></textarea>
+              <textarea class="form__message" name="message" cols="20" rows="4" placeholder="Mensaje" required="required" id="message"></textarea>
             </div>
           </div>
         </form>
         <footer class="form__footer">
-          <div class="btn-container"><a class="btn btn-block" href="#">envíar </a></div>
+          <div class="btn-container"><a class="btn btn-block" href="#" id="sendMessage">envíar</a></div>
         </footer>
       </section>
     </main>
@@ -147,35 +166,35 @@
             <li class="sitemap__item"><a class="sitemap__link" href="">Sobre mí</a></li>
             <li class="sitemap__item"><a class="sitemap__link" href="">Contacto</a></li>
           </ul>
-          <p class="site__contact"><a class="site__email" href="mailto:hola@alejandro-leyva.com">hola@alejandro-leyva.com</a></p>
+          <p class="sitemap__contact"><a class="site__email" href="mailto:hola@alejandro-leyva.com">hola@alejandro-leyva.com</a></p>
         </div>
-        <div class="logo"><img class="logo__img" src="assets/imgs/logo_A.png" alt=""/></div>
+        <div class="logo"><img class="logo__img" src="assets/imgs/logo_A.png" alt="logo alejandro leyva"/></div>
         <div class="social-media">
           <h3 class="social-media__title">Redes sociales</h3>
           <ul class="social-media__list">
-            <li class="social-media__item"><a class="icon-yt" href="#"></a></li>
-            <li class="social-media__item"><a class="icon-play" href="#"></a></li>
-            <li class="social-media__item"><a class="icon-fb" href="#"></a></li>
-            <li class="social-media__item"><a class="icon-tw" href="#"></a></li>
-            <li class="social-media__item"><a class="icon-dribble" href="#"></a></li>
-            <li class="social-media__item"><a class="icon-lk" href="#"></a></li>
+            <li class="social-media__item"><a class="icon-yt" href="https://www.youtube.com/channel/UC2rlTxv1KvCDUdI7okbudhw" target="_blank"></a></li>
+            <li class="social-media__item"><a class="icon-play" href="https://play.google.com/store/apps/dev?id=7182139636058696036&amp;hl=en" target="_blank"></a></li>
+            <li class="social-media__item"><a class="icon-fb" href="https://www.facebook.com/leyva.consult/" target="_blank"></a></li>
+            <li class="social-media__item"><a class="icon-tw" href="https://twitter.com/jalm_x" target="_blank"></a></li>
+            <li class="social-media__item"><a class="icon-lk" href="https://www.linkedin.com/in/alejandro-leyva-consult/" target="_blank"></a></li>
           </ul>
         </div>
       </header>
       <div class="footer__information">
         <ul class="information__list">
-          <li class="information__item"><a class="information__link" href="#">Sitemap</a></li>
-          <li class="information__item"><a class="information__link" href="#">Terminos y Condiciones</a></li>
-          <li class="information__item"><a class="information__link" href="#">Política de privacidad</a></li>
+          <li class="information__item"><a class="information__link" href="sitemap.xml" target="_blank">Sitemap</a></li>
+          <li class="information__item"><a class="information__link" href="terms_and_conditions.html" target="_blank">Terminos y Condiciones</a></li>
+          <li class="information__item"><a class="information__link" href="privacy_policy.html" target="_blank">Política de privacidad</a></li>
         </ul>
       </div>
       <footer class="footer__mark">
-        <p><a href="#" id="mark">&copy Alejandro Leyva </a></p>
+        <p><a href="/" id="mark">&copy Alejandro Leyva 2018 - </a></p>
         <script type="text/javascript">
           const date = document.getElementById('mark');
           date.innerHTML += new Date().getFullYear()
         </script>
       </footer>
     </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>

@@ -2,16 +2,42 @@
     &__container {
         width: 100%;
         display: flex;
+        @media screen and (max-width: $break-medium) {
+            display: block;
+            position: relative;
+        }
+    }
+    &__img {
+        padding-right: .5rem;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: calc( 100% - .5rem);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba($color: #29ABE2, $alpha: .3);
+        }
+    }
+    &__description {
+        padding-left: .5rem;
+        @media screen and (max-width: $break-medium) {
+            position: absolute;
+            background: rgba($color: #29ABE2, $alpha: .3);
+            color: white;
+            bottom: 0;
+            left: 0;
+        }
     }
     &__img,
     &__description {
         width: 50%;
-    }
-    &__img {
-        padding-right: .5rem;
-    }
-    &__description {
-        padding-left: .5rem;
+        @media screen and (max-width: $break-medium) {
+            width: 100%;
+            padding: 0;
+        }
     }
 }
 

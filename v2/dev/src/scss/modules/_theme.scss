@@ -1,6 +1,8 @@
 @font-face {
-    src: url('/assets/Raleway/Raleway-Regular.ttf') format("ttf");
-    font-family: Raleway;
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway/Raleway-Regular.ttf') format("ttf"), url('/assets/fonts/Raleway/Raleway-Regular.woff2') format('woff2'), url('/assets/fonts/Raleway/Raleway-Regular.woff') format('woff'), url('/assets/fonts/Raleway/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
@@ -20,5 +22,3 @@
     color: var(--color-black);
     font-family: Raleway, sans-serif;
 }
-
-//TODO: verificar el font family
