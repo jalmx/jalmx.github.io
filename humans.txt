@@ -19,7 +19,7 @@ Gulp (@gulpjs on Twitter)
 
 /* SITE */
 Standards: HTML5, CSS, ES6
-Components: Pug, SASS
+Components: Pug, SASS, Google Fonts, Material Design Icons
 Software: Visual Studio Code
 
 /* NOTE */
