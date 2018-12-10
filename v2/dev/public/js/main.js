@@ -4,8 +4,13 @@
 ;
 
 (function (d) {
-  var menu = d.getElementById('btn_menu');
-  menu.addEventListener('click', function (e) {
+  var btnMenu = d.getElementById('btn_menu');
+  document.addEventListener('click', function (e) {
+    if (e.target === btnMenu) return;
+    var nav = d.getElementById('menu');
+    nav.classList.remove('menu-active');
+  });
+  btnMenu.addEventListener('click', function (e) {
     e.preventDefault();
     var nav = d.getElementById('menu');
     nav.classList.toggle('menu-active');

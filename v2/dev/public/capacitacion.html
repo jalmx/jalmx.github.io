@@ -26,12 +26,20 @@
     <meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png"/>
     <link rel="manifest" href="assets/icon/site.webmanifest"/>
     <link rel="manifest" href="assets/icon/manifest.json"/>
-    <meta property="og:title" content="Alejandro Leyva Consultor"/>
-    <meta property="og:image" content="https://raw.githubusercontent.com/jalmx89/ohm-law-X/master/img_src/lg_A.png"/>
-    <meta property="og:url" content="https://www.facebook.com/leyva.consult"/>
-    <meta property="og:site_name" content="Alejandro Leyva Consultor"/>
-    <meta property="og:description" content="Consultoria para startups, Negocios y Tecnología"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <meta property="og:title" content="Alejandro Leyva | Android Developer"/>
+    <meta property="og:image" content="/assets/img/"/>
+    <meta property="og:url" content="https://www.alejandro-leyva.com"/>
+    <meta property="og:site_name" content="Alejandro Leyva Profile"/>
+    <meta property="og:description" content="Alejandro Leyva desarrollador, diseñador de Software y Handware, Capacitador y Docente"/>
+    <script>(function (a, s, y, n, c, h, i, d, e) {s.className += ' ' + y; h.start = 1 * new Date; h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };(a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;})(window, document.documentElement, 'async-hide', 'dataLayer', 4000,{ 'GTM-PVLQSDR': true });</script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-113531418-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-113531418-1');
+    </script>
+    <link rel="stylesheet" href="css/style.css?t=1544400112292"/>
     <title>Alejandro Leyva | Perfil - Develop & Design</title>
   </head>
   <body>
@@ -53,20 +61,22 @@
             <li class="menu__item"><a class="menu__link" href="/#blog">Blog</a></li>
             <li class="menu__item"><a class="menu__link" href="/#teaching">Capacitación</a></li>
             <li class="menu__item"><a class="menu__link" href="/#about">Sobre mí</a></li>
-            <li class="menu__item"><a class="menu__link" href="/#contact">Contacto</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contact">Contacto</a></li>
             <li class="menu__item"><a class="menu__link" href="https://xizuth.com" target="_blank">Xizuth</a></li>
           </ul>
         </nav>
       </div>
-      <section class="section">
-        <h2 class="section__title">Capacitacion</h2>
-        <div class="information__container">
+      <section class="section information">
+        <h2 class="section__title" id="learning">Capacitacion</h2>
+        <div class="information__container learning__container">
           <div class="learning__img information__img"><img src="assets/imgs/teaching.png" alt="Alejandro Leyva Clase enseñando"/></div>
-          <div class="learning__description information__description">
-            <p>Amplia experiencia en docencia, en diversos niveles educativos; tanto público como privado. Impartiendo asignaturas de especialidad de carreras como ingeniería de software, sistemas computacionales, estadística administrativa y mecatrónica. Tanto de manera presencial como en línea.</p>
+          <div class="learning__description">
+            <p>Amplia experiencia en docencia, en diversos niveles educativos; tanto público como privado. Impartiendo asignaturas de especialidad de carreras como ingeniería de software, sistemas computacionales, estadística administrativa y mecatrónica. Tanto de manera presencial como en línea. <br><br></p>
+            <p>Damos el servicio de aseseorias, consultoria, capacitación, desarrollo de proyectos. De toda indole y nivel. Desde diseño de productos, testeo, producción.</p>
           </div>
         </div>
       </section>
+      <section id="container"></section>
       <section class="section contact">
         <h2 class="section__title" id="contact">Contacto</h2>
         <form class="contact__form form">
@@ -89,11 +99,12 @@
       <header class="footer__header">
         <div class="sitemap">
           <ul class="sitemap__list">
-            <li class="sitemap__item"><a class="sitemap__link" href="">Diseñador & Desarrollo</a></li>
-            <li class="sitemap__item"><a class="sitemap__link" href="">Blog</a></li>
-            <li class="sitemap__item"><a class="sitemap__link" href="">Capacitación</a></li>
-            <li class="sitemap__item"><a class="sitemap__link" href="">Sobre mí</a></li>
-            <li class="sitemap__item"><a class="sitemap__link" href="">Contacto</a></li>
+            <li class="sitemap__item"><a class="sitemap__link" href="/#design">Diseñador & Desarrollo</a></li>
+            <li class="sitemap__item"><a class="sitemap__link" href="/#blog">Blog</a></li>
+            <li class="sitemap__item"><a class="sitemap__link" href="/#teaching">Capacitación</a></li>
+            <li class="sitemap__item"><a class="sitemap__link" href="/about.html">Sobre mí</a></li>
+            <li class="sitemap__item"><a class="sitemap__link" href="/#contact">Contacto</a></li>
+            <li class="sitemap__item"><a class="sitemap__link" href="https://xizuth.com" target="_blank">Xizuth</a></li>
           </ul>
           <p class="sitemap__contact"><a class="site__email" href="mailto:hola@alejandro-leyva.com">hola@alejandro-leyva.com</a></p>
         </div>
@@ -124,6 +135,177 @@
         </script>
       </footer>
     </footer>
-    <script src="/js/main.js"></script>
+    <script>
+      const data = [
+        {
+          title: 'Software',
+          courses:[
+            {
+              name:'Android',
+              description: 'Desarrollo de aplicaciones en Android',
+              img:{
+                url:'/assets/imgs/icons/android.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'JAVA SE',
+              description: 'Desarrollo de aplicaciones multiplataforma',
+              img:{
+                url:'/assets/imgs/icons/java.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'JavaScript',
+              description: 'Programación de sitios dinámicos (SPA, PWA).',
+              img:{
+                url:'/assets/imgs/icons/js.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'Nodejs',
+              description: 'Programación Backend con JavaScript',
+              img:{
+                url:'/assets/imgs/icons/nodejs.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'Firebase',
+              description: 'Aplicaciones con un Backend As A Service',
+              img:{
+                url:'/assets/imgs/icons/firebase.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'Desarrollo Web',
+              description: 'Desarrollo de sitios Web estáticos (HTML5, CSS) ',
+              img:{
+                url:'/assets/imgs/icons/code.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'HTML5',
+              description: 'Estandar HTML5',
+              img:{
+                url:'/assets/imgs/icons/html5.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'CSS',
+              description: 'Estandar CSS',
+              img:{
+                url:'/assets/imgs/icons/css.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'Flexbox - CSS',
+              description: 'Estandar CSS',
+              img:{
+                url:'/assets/imgs/icons/css.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+          ]
+        },
+        {
+          title: 'Electrónica',
+          courses:[
+            {
+              name:'Arduino',
+              description: 'Programación en plataforma Arduino',
+              img:{
+                url:'/assets/imgs/icons/arduino.svg',
+                alt:"logo"
+              },
+              link: '#contact'
+            },
+            {
+              name:'Microcontroladores (Microchip)',
+              description: 'Programación en uC Microchip C/ASM',
+              img:{
+                url:'/assets/imgs/icons/micro.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'Electrónica Digital',
+              description: 'Conceptos, aplicaciones',
+              img:{
+                url:'/assets/imgs/icons/digitales.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'Electrónica Analógica',
+              description: 'Conceptos, aplicaciones',
+              img:{
+                url:'/assets/imgs/icons/analogica.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'Electrónica Básica',
+              description: 'Conceptos, aplicaciones',
+              img:{
+                url:'/assets/imgs/icons/electronica.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            },
+            {
+              name:'IoT',
+              description: 'Sistemas embebiddos, Internet de las Cosas.',
+              img:{
+                url:'/assets/imgs/icons/micro.svg',
+                alt:"logo "
+              },
+              link: '#contact'
+            }
+          ]
+        }
+        ]
+      let container = document.getElementById('container');
+      let html = '';
+      data.forEach((element)=>{
+        let card = `
+        <section class="section design">
+        <h2 class="section__title" id="design">${element.title}</h2>
+        <div class="card-container">`
+        element.courses.forEach( course =>{
+          card+= `
+                <div class="card card__space">
+                  <header class="card__header">
+                    <div class="card__img"><a class="img-link" href="${course.link}"><img class="img-design" src="${course.img.url}" alt="${course.img.alt + course.name}"/></a></div>
+                    <h2 class="card__title">${course.name}</h2>
+                  </header>
+                  <div class="card__description">${course.description}</div>
+                  <footer class="card__footer"><a class="btn-card btn" href="${course.link}">Contactanos</a></footer>
+            </div>
+            `
+        })
+        html +=card + "</section>";
+      });
+      container.innerHTML += html
+    </script>
+    <script src="/js/main.js?t=1544400112292"></script>
   </body>
 </html>

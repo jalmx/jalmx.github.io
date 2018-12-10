@@ -30,6 +30,11 @@ gulp.task('views', function () {
         }))
         .pipe(gulp.dest('public'))
 });
+gulp.task('views-b', function () {
+    return gulp.src('src/views/*.pug')
+        .pipe(pug())
+        .pipe(gulp.dest('public'))
+});
 
 gulp.task('js', () => {
     gulp.src('./src/js/**.js')
@@ -104,6 +109,8 @@ gulp.task('robots', function () {
         .pipe(gulp.dest('public/'));
 });
 
+gulp.task('build', ['sass', 'views', 'js', 'cache', 'sitemap', 'robots', 'humans']);
+
 gulp.task('default', ['views', 'sass', 'js'], () => {
     server.init({
         server: {
@@ -116,11 +123,9 @@ gulp.task('default', ['views', 'sass', 'js'], () => {
     gulp.watch('./src/scss/**/**.scss', ['sass'])
 });
 
-gulp.task('build', ['styles-build', 'pug-build', 'scripts-build', 'images-build', 'cache', 'sitemap'])
-
-// TODO: agregegar los textos decriptivos sobre mí y la capacitación, n listado de cursos
-// TODO: agregegar lazy load
+//TODO: agregar gulp para imagenes, js min, min html
 // TODO: agregegar el opengrahp
 // TODO: agregegar el tweeter card
 // TODO: agregegar el schema
-// TODO: agregegar agregar google analitycs
+// TODO: terminar 404
+// TODO: hacer task de release

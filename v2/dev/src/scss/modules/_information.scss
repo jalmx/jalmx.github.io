@@ -11,6 +11,7 @@
         padding-right: .5rem;
         position: relative;
         &::before {
+            // overlay
             content: '';
             display: block;
             width: calc( 100% - .5rem);
@@ -19,6 +20,9 @@
             top: 0;
             left: 0;
             background: rgba($color: #29ABE2, $alpha: .3);
+            @media screen and (max-width: $break-medium) {
+                width: 100%;
+            }
         }
     }
     &__description {
@@ -41,6 +45,40 @@
     }
 }
 
-.about__description {
-    order: -1;
+.about {
+    &__img {
+        width: 50%;
+    }
+    &__description {
+        order: -1;
+        width: 50%;
+    }
+    @media screen and (max-width: $break-medium) {
+        &__img,
+        &__description {
+            width: 100%;
+        }
+        &__description {
+            padding-top: 1rem;
+        }
+    }
+}
+
+.learning {
+    &__img {
+        width: 50%;
+    }
+    &__description {
+        order: -1;
+        width: 50%;
+    }
+    @media screen and (max-width: $break-medium) {
+        &__img,
+        &__description {
+            width: 100%;
+        }
+        &__description {
+            padding-top: 1rem;
+        }
+    }
 }

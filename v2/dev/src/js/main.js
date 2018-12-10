@@ -1,12 +1,23 @@
 ;
 ((d) => {
-    const menu = d.getElementById('btn_menu')
 
-    menu.addEventListener('click', e => {
+    const btnMenu = d.getElementById('btn_menu')
+
+    document.addEventListener('click', e => {
+
+        if (e.target === btnMenu) return;
+
+        const nav = d.getElementById('menu');
+        nav.classList.remove('menu-active')
+
+    })
+
+    btnMenu.addEventListener('click', e => {
         e.preventDefault();
         const nav = d.getElementById('menu');
         nav.classList.toggle('menu-active')
     })
+
 
 })(document);
 
