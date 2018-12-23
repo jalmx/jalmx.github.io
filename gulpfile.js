@@ -127,5 +127,4 @@ gulp.task('default', ['views', 'sass', 'js'], () => {
 // TODO: agregegar el opengrahp
 // TODO: agregegar el tweeter card
 // TODO: agregegar el schema
-// TODO: terminar 404
 // TODO: hacer task de release
