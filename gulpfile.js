@@ -10,6 +10,7 @@ const sitemap = require('gulp-sitemap');
 const cachebust = require('gulp-cache-bust');
 const humans = require('gulp-humans');
 const robots = require('gulp-robots');
+const minify = require('gulp-minify');
 const server = browserSync.create();
 
 const postCSSPluings = [
@@ -24,16 +25,16 @@ const postCSSPluings = [
 ];
 
 gulp.task('views', function () {
-    return gulp.src('src/views/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
-        .pipe(gulp.dest('public'))
-});
-gulp.task('views-b', function () {
-    return gulp.src('src/views/*.pug')
-        .pipe(pug())
-        .pipe(gulp.dest('public'))
+    return gulp.src('./src/views/**.pug')
+        .pipe(pug(
+            {
+                pretty: true,
+                basedir: '/src/views'
+            }
+        )).on('error', (e) => {
+            console.log('pug error', e);
+        })
+        .pipe(gulp.dest('./public/'));
 });
 
 gulp.task('js', () => {
@@ -44,11 +45,17 @@ gulp.task('js', () => {
             )
         ).on('error', (e) => { console.log('error en la compilacion de babel', e) })
         .pipe(browserify()).on('error', (e) => { console.log('error en la compilacion de browserify', e) })
+        .pipe(minify({
+            ext: {
+                src: '-min.js',
+                min: '.js'
+            }
+        }))
         .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('sass', () => {
-    gulp.src('./src/scss/style.scss')
+    gulp.src('./src/scss/*.scss')
         .pipe(sass()).on('error', (e) => { console.log('error en la compilacion SASS', e) })
         .pipe(postcss(postCSSPluings)).on('error', (e) => { console.log('error en la compilacion POST CSS'), e })
         .pipe(gulp.dest('./public/css'))
@@ -56,20 +63,22 @@ gulp.task('sass', () => {
 })
 
 gulp.task('sitemap', () => {
-    gulp.src('./public/**/*.html', {
+    gulp.src('./public/**/**.html', {
         read: false
     })
         .pipe(sitemap({
-            siteUrl: 'https://www.alejandro-leyva.com' // remplazar por tu dominio
+            siteUrl: 'https://www.alejandro-leyva.com'
         }))
+        .pipe(minify())
         .pipe(gulp.dest('./public'))
 })
 
 gulp.task('cache', () => {
-    gulp.src('./public/**/*.html')
+    gulp.src('./public/**/**.html')
         .pipe(cachebust({
             type: 'timestamp'
-        }))
+        })).
+        pipe(minify())
         .pipe(gulp.dest('./public'))
 })
 
@@ -109,8 +118,6 @@ gulp.task('robots', function () {
         .pipe(gulp.dest('public/'));
 });
 
-gulp.task('build', ['sass', 'views', 'js', 'cache', 'sitemap', 'robots', 'humans']);
-
 gulp.task('default', ['views', 'sass', 'js'], () => {
     server.init({
         server: {
@@ -123,8 +130,9 @@ gulp.task('default', ['views', 'sass', 'js'], () => {
     gulp.watch('./src/scss/**/**.scss', ['sass'])
 });
 
+gulp.task('build', ['sass', 'views', 'js', 'robots', 'humans', 'sitemap', 'cache']);
+
 //TODO: agregar gulp para imagenes, js min, min html
 // TODO: agregegar el opengrahp
 // TODO: agregegar el tweeter card
 // TODO: agregegar el schema
-// TODO: hacer task de release
