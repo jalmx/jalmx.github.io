@@ -1,0 +1,16 @@
+extends templates/template
+block header
+  include templates/body/header
+block body
+  section.section.about.information
+    h2.section__title#about Sobre mí
+    .information__container.about__container
+      .information__img.about__img
+        img(src="assets/imgs/me.jpg", alt="Alejandro Leyva recibiendo diploma de capacitador")
+      .about__description
+        p Soy ingeniero en electrónica, entusiasta del desarrollo y diseño electrónico; desarrollo de software, especializado en creación de <strong>aplicaciones nativas en Android</strong>. Emprendedor en el ámbito tecnológico, conferencista, docente y capacitador en el rubro digital.<br><br>
+        p Soy una persona de retos, siempre con una mente abierta a nuevos aprendizajes, investigación y resolución de problemas, aplicando herramientas del management, combinando la tecnología, haciendo uso de datos para toma de decisiones.
+block contact
+  include templates/body/contact
+block footer
+  include templates/body/footer
