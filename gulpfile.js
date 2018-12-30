@@ -11,6 +11,7 @@ const cachebust = require('gulp-cache-bust');
 const humans = require('gulp-humans');
 const robots = require('gulp-robots');
 const minify = require('gulp-minify');
+const htmlmin = require('gulp-htmlmin');
 const server = browserSync.create();
 
 const postCSSPluings = [
@@ -69,7 +70,7 @@ gulp.task('sitemap', () => {
         .pipe(sitemap({
             siteUrl: 'https://www.alejandro-leyva.com'
         }))
-        .pipe(minify())
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./public'))
 })
 
@@ -77,8 +78,8 @@ gulp.task('cache', () => {
     gulp.src('./public/**/**.html')
         .pipe(cachebust({
             type: 'timestamp'
-        })).
-        pipe(minify())
+        }))
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./public'))
 })
 
@@ -130,9 +131,4 @@ gulp.task('default', ['views', 'sass', 'js'], () => {
     gulp.watch('./src/scss/**/**.scss', ['sass'])
 });
 
-gulp.task('build', ['sass', 'views', 'js', 'robots', 'humans', 'sitemap', 'cache']);
-
-//TODO: agregar gulp para imagenes, js min, min html
-// TODO: agregegar el opengrahp
-// TODO: agregegar el tweeter card
-// TODO: agregegar el schema
+gulp.task('build', ['views', 'js', 'robots', 'humans', 'sitemap', 'cache', 'sass']);

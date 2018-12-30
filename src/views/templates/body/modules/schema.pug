@@ -1,0 +1,40 @@
+span.schema
+  span(itemscope='', itemtype='http://schema.org/Person').schema-description
+    meta(itemprop='name', content='Alejandro Leyva')
+    meta(itemprop='alternateName', content='Xizuth')
+    link(itemprop='url', href='https://www.alejandro-leyva.com')
+    img(itemprop='image', src='https://www.alejandro-leyva.com/assets/imgs/perfil.jpg')
+    meta(itemprop='jobTitle', content='Diseñador & Desarrollador Hardware & Software, Facilitador & Docente')
+    span(itemprop='worksFor', itemscope='', itemtype='http://schema.org/Organization')
+      meta(itemprop='name', content='Xizuth Inc')
+    a(itemprop='sameAs', href='https://www.facebook.com/leyva.consult/') Facebook
+  script(type='application/ld+json').
+    { "@context": "http://schema.org/",
+    "@type": "Person",
+    "name": "Alejandro Leyva",
+    "alternateName": "Xizuth",
+    "url": "https://www.alejandro-leyva.com",
+    "image": "https://www.alejandro-leyva.com/assets/imgs/perfil.jpg",
+    "sameAs": "https://www.facebook.com/leyva.consult/",
+    "jobTitle": "Diseñador & Desarrollador Hardware & Software, Facilitador & Docente",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Xizuth Inc"
+      }
+    }
+  style.
+    .schema{
+      display:block;
+      text-align:center;
+    }
+    .schema-description{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .schema img{
+      display: inline-block;
+      border-radius:100%;
+      width:16px;
+      margin-right: .5rem;
+    }
